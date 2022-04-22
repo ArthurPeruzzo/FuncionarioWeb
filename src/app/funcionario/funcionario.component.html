@@ -6,7 +6,7 @@
         </div>
     </div>
 </form>
-<form [formGroup]="formFuncionario" (ngSubmit)="salvar()">
+<form [formGroup]="formFuncionario">
     <div class="card">
         <p-table [value]="funcionarios" responsiveLayout="scroll">
             <ng-template pTemplate="header">
@@ -62,8 +62,7 @@
             </div>
             <div class="flex col-6 justify-content">
                 <label>Telefone:
-                    <input class="margin-right width-100" required placeholder="(99) 99999-9999"
-                    pattern="((\(?\d{2}\)?)?(\s?\d{4,5}-\d{4}))" type="text" formControlName="telefone" />
+                    <input class="margin-right width-100" type="number" formControlName="telefone" />
                 </label>
                
             </div>

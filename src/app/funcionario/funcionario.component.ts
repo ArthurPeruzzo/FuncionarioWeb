@@ -59,9 +59,9 @@ export class FuncionarioComponent implements OnInit {
     if(this.formFuncionario.valid){
     const funcionario = this.montaFuncionarioParaSalvar();
     if(funcionario.funcionarioId){
-      this.funcionarioService.atualizarFuncionario(funcionario).subscribe(resp => console.log('atualizou', resp));
+      this.funcionarioService.atualizarFuncionario(funcionario).subscribe();
     }else{
-      this.funcionarioService.inserirFuncionario(funcionario).subscribe(resp => console.log('criou', resp));
+      this.funcionarioService.inserirFuncionario(funcionario).subscribe();
     }
     
     this.display = false;
@@ -74,7 +74,7 @@ export class FuncionarioComponent implements OnInit {
   }
 
   excluir(){
-    this.funcionarioService.deletarFuncionario(this.funcionario.funcionarioId).subscribe(resp => console.log('deletou', resp));
+    this.funcionarioService.deletarFuncionario(this.funcionario.funcionarioId).subscribe();
     this.display = false;
   }
 
