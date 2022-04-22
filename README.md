@@ -10,6 +10,8 @@ Decidi usar o Primefaces pela facilidade e maior produtividade em criar os compo
 
 Procurei deixar o frontEnd somente responsável por mostrar, receber e enviar dados, deixando as regras de negócio para o backEnd gerenciar.
 
+Antes de rodar o projeto pela primeira vez, digite o comando 'npm install' no terminal. 
+
 Sinta-se à vontade para questionar!
 
 
