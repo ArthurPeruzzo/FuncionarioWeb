@@ -1,6 +1,7 @@
 # FuncionarioWeb
 
 Fala dev!
+
 Sugiro clonar o repositório e executá-lo localmente para evitar possíveis problemas, qualquer dúvida, por favor me infome.
 
 Irei comentar brevemente sobre as minhas decisões neste projeto.
