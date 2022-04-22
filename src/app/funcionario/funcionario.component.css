@@ -1,0 +1,66 @@
+.mb{
+    margin-bottom: 1rem;
+}
+
+.margin-right{
+    margin-right: 0.5rem;
+}
+
+.width-100{
+    width: 114%;
+}
+
+.flex{
+    display: flex;
+}
+
+input{
+    border: none;
+    background-color: #e5e5e5;
+    padding: .5rem;
+    border-radius: .3rem;
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+   -webkit-appearance: none;    
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.align-items-end{
+    align-items: flex-end;
+}
+
+.padding-bottom{
+    padding-bottom: 20px;
+}
+.justify-content-flex-end{
+    justify-content: flex-end;
+}
+
+.margin-right-botao{
+    margin-right: 3.5rem;
+}
+
+.cancelar{
+    margin-right: 15px;
+}
+
+button{
+    margin-left: 12px !important;
+}
+
+:host::ng-deep.p-dropdown.p-component{
+    background-color: #e5e5e5;
+    margin-left: 57px;
+    border-radius: .3rem;
+    border: none;
+    display: flex;
+}
