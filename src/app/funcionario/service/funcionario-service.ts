@@ -21,11 +21,11 @@ export class FuncionarioService {
   }
 
   buscarTodosFuncionarios(): Observable<Funcionario[]>{
-    return this.http.get<Funcionario[]>(`${this.url}/buscarTodos`);
+    return this.http.get<Funcionario[]>(`${this.url}/buscar-todos`);
   }
 
   buscarFuncionarioPorNomeOuCpf(filtro: any): Observable<Funcionario[]>{
-    return this.http.get<Funcionario[]>(`${this.url}/buscarTodos/${filtro}`);
+    return this.http.get<Funcionario[]>(`${this.url}/buscar-todos/${filtro}`);
   }
 
   atualizarFuncionario(funcionario: Funcionario): Observable<Funcionario>{

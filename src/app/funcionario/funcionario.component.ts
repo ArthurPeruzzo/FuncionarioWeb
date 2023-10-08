@@ -58,7 +58,7 @@ export class FuncionarioComponent implements OnInit {
   salvar(){
     if(this.formFuncionario.valid){
     const funcionario = this.montaFuncionarioParaSalvar();
-    if(funcionario.funcionarioId){
+    if(funcionario.id){
       this.funcionarioService.atualizarFuncionario(funcionario).subscribe();
     }else{
       this.funcionarioService.inserirFuncionario(funcionario).subscribe();
@@ -74,7 +74,7 @@ export class FuncionarioComponent implements OnInit {
   }
 
   excluir(){
-    this.funcionarioService.deletarFuncionario(this.funcionario.funcionarioId).subscribe();
+    this.funcionarioService.deletarFuncionario(this.funcionario.id).subscribe();
     this.display = false;
   }
 
@@ -98,7 +98,7 @@ export class FuncionarioComponent implements OnInit {
 
   montaFuncionarioParaSalvar(): Funcionario{    
       return {
-        funcionarioId: this.funcionario.funcionarioId,
+        id: this.funcionario.id,
         nome: this.formFuncionario.get('nome')?.value,
         cpf: this.formFuncionario.get('cpf')?.value,
         telefone: this.formFuncionario.get('telefone')?.value,
@@ -112,7 +112,7 @@ export class FuncionarioComponent implements OnInit {
 
   montaFuncionarioParaEditar(funcionario: Funcionario){
     if(funcionario){
-      this.formFuncionario.get('funcionarioId')?.setValue(funcionario.funcionarioId);
+      this.formFuncionario.get('funcionarioId')?.setValue(funcionario.id);
       this.formFuncionario.get('nome')?.setValue(funcionario.nome);
       this.formFuncionario.get('cpf')?.setValue(funcionario.cpf);
       this.formFuncionario.get('telefone')?.setValue(funcionario.telefone);
